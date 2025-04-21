@@ -1,7 +1,7 @@
 import kagglehub
 import os
 import shutil
-
+import pandas as pd
 
 
 
@@ -25,4 +25,5 @@ for file in os.listdir(path):
     if os.path.isfile(file_path):
         shutil.move(file_path, os.path.join(data_dir, file))
 
-
+train_df = pd.read_csv(data_dir+"/Train.csv")
+test_df = pd.read_csv(data_dir+"/Test.csv")

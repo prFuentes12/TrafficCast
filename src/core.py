@@ -143,7 +143,7 @@ def eda_plots(df, dataset_name):
         except Exception as e:
             print(f"Error converting or plotting 'date_time' for {dataset_name}: {e}")
 
-# Call the EDA function for both the training and test sets
+# Call the EDA function for the training set
 eda_plots(train_df, "Train Set")
 
 

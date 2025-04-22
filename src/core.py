@@ -318,3 +318,9 @@ print(f"Mean Squared Error (MSE): {val_mse}")
 print(f"Root Mean Squared Error (RMSE): {val_rmse}")
 print(f"Mean Absolute Error (MAE): {val_mae}")
 print(f"R-squared (R²): {val_r2}")
+# Call the EDA function for the training set
+eda_plots(train_df, "Train Set")
+
+
+
+
